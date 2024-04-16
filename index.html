@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- #favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- #title -->
+        <title>Harry Bandukda | Portfolio</title>
+        <!-- #keywords -->
+        <meta name="keywords" content="personal, portfolio, html">
+        <!-- #description -->
+        <meta name="description" content="Personal Portfolio Html5 Template">
+        <!-- ==== css dependencies start ==== -->
+        <!-- bootstrap five css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- bootstrap icons css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <!-- material icons css -->
+        <link rel="stylesheet" href="assets/css/material-icons.css">
+        <!-- font awesome six css -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!-- nice select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- slick css -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- odometer css -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- ==== / css dependencies end ==== -->
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/main.min.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- ==== preloader start ==== -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <!-- ==== / preloader end ==== -->
+        <!-- ==== mouse cursor drag start ==== -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner">
+            <span>Drag</span>
+        </div>
+        <!-- ==== / mouse cursor drag end ==== -->
+        <!-- ==== page wrapper start ==== -->
+        <div class="my-app">
+            <!-- ==== header start ==== -->
+            <header class="header secondary-header">
+                <div class="primary-navbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav class="navbar p-0">
+                                    <div class="navbar__profile d-none d-xl-block">
+                                        <a href="index.html" aria-label="home page" title="logo">
+                                            <img src="assets/images/avatar.png" alt="Images">
+                                        </a>
+                                    </div>
+                                    <div class="navbar__logo d-block d-xl-none">
+                                        <a
+                                            href="index.html"
+                                            aria-label="home page"
+                                            title="logo"
+                                            class="logo"
+                                        >
+                                            <img src="assets/images/logo.png" alt="Images">
+                                        </a>
+                                    </div>
+                                    <div class="navbar__menu">
+                                        <div class="navbar__logo d-none d-xl-block">
+                                            <a
+                                                href="index.html"
+                                                aria-label="home page"
+                                                title="logo"
+                                                class="logo"
+                                            >
+                                                <img src="assets/images/logo.png" alt="Images">
+                                            </a>
+                                        </div>
+                                        <ul class="navbar__list">
+                                            <li class="navbar__item nav-fade">
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="about-me.html">Resume</a>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="contact-me.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="navbar__options">
+                                        <button class="open-mobile-info animated-bar d-none d-xl-flex" aria-label="toggle offset info" title="open offset info">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                        <button class="open-mobile-menu animated-bar d-flex d-xl-none" aria-label="toggle mobile menu" title="open mobile menu">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ==== mobile menu start ==== -->
+            <div class="mobile-menu d-block d-xl-none">
+                <nav class="mobile-menu__wrapper">
+                    <div class="mobile-menu__header nav-fade">
+                        <div class="mobile-menu__logo"></div>
+                        <button aria-label="close mobile menu" class="close-mobile-menu">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="mobile-menu__list"></div>
+                    <div class="mobile-menu__social social nav-fade">
+                        <a
+                            href="https://www.github.com/harrybandukda"
+                            target="_blank"
+                            aria-label="share us on facebook"
+                            title="facebook"
+                            class="fb"
+                        >
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/harrybandukda"
+                            target="_blank"
+                            aria-label="share us on instagram"
+                            title="instagram"
+                            class="in"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-menu__backdrop"></div>
+            <!-- ==== / mobile menu end ==== -->
+            <!-- ==== offset info start ==== -->
+            <div class="menu">
+                <button aria-label="close off canvas" class="off-canvas-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="menu-inner">
+                    <div class="gallery">
+                        <div class="title menu-nav-link">
+                            <h2 class="title-xl text-uppercase fw-7">Menu</h2>
+                        </div>
+                        <div class="images">
+                            <a class="image-link" href="index.html">
+                                <div class="image" data-label="Home">
+                                    <img src="assets/images/background-title.jpg" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="about-me.html">
+                                <div class="image" data-label="Resume">
+                                    <img src="assets/images/background-title.jpg" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="contact-me.html">
+                                <div class="image" data-label="Contact Us">
+                                    <img src="assets/images/background-title.jpg" alt="Image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==== offset info end ==== -->
+            <!-- ==== / header end ==== -->
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <!-- ==== banner start ==== -->
+                        <section class="banner-two">
+                            <div class="container">
+                                <div class="row gaper">
+                                    <div class="col-12 col-lg-8 col-xxl-9">
+                                        <div class="banner-two__content">
+                                            <div class="banner-two__group">
+                                                <div class="banner-two__left">
+                                                    <h1 class="title-xxl">
+                                                        Hi I'm Harris,
+                                                        <br>
+                                                        <span id="textTyped"></span>
+                                                    </h1>
+                                                </div>
+                                                <div class="banner-two__right">
+                                                    <p class="text-senary">I'm on</p>
+                                                    <div class="social">
+                                                        <a
+                                                            href="https://www.instagram.com/harrybandukda/"
+                                                            target="_blank"
+                                                            aria-label="share us on instagram"
+                                                            title="instagram"
+                                                        >
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                        <a
+                                                            href="https://www.github.com/harrybandukda"
+                                                            target="_blank"
+                                                            aria-label="share us on github"
+                                                            title="github"
+                                                        >
+                                                            <i class="fa-brands fa-github"></i>
+                                                        </a>
+                                                        <a
+                                                            href="https://www.discordapp.com/users/828427827472629800"
+                                                            target="_blank"
+                                                            aria-label="share us on discord"
+                                                            title="discord"
+                                                        >
+                                                            <i class="fa-brands fa-discord"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="banner-content__paragraph">
+                                                <p>I am a full-stack developer and blockchain enthusiast based in Montreal, QC. In addition to my professional pursuits, I enjoy a variety of personal interests. My preferred tools for development include Solidity, C++, and Python. Recently, I developed a token for the Binance platform, which has been listed on major trading platforms. This token was successfully acquired by an investor during the initial seed funding phase.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="banner-content__footer">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://goo.gl/maps/ktoFZVxqpYmtJNiR8" target="_blank">
+                                                            <i class="fa-solid fa-location-dot"></i>
+                                                            Lives in Montreal, QC
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="mailto:moharry.bandukda@georgebrown.ca">
+                                                            <i class="fa-regular fa-envelope"></i>
+                                                            moharry.bandukda@georgebrown.ca
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <button id="downloadCv">
+                                                    Download Resume
+                                                    <i class="fa-solid fa-download"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-xxl-3">
+                                        <div class="banner-two__sidebar">
+                                            <h4 class="title-md fw-7">My Favorite Languages</h4>
+                                            <div class="skill-wrap">
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Python</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="100%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>C, C++ & C#</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="95%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Solidity</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="95%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>ReactJS & VueJs</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="85%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Go Lang</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="85%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / banner end ==== -->
+                        <!-- ==== text slider start ==== -->
+                        <div class="text-slider-wrapper">
+                            <div class="text-slider">
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-lg">
+                                        <a href="service-single.html">
+                                            Blockchain Developer
+                                        </a>
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-lg">
+                                        <a href="service-single.html">
+                                            WEB DEVELOPER
+                                        </a>
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-lg">
+                                        <a href="service-single.html">
+                                            dApps Developer
+                                        </a>
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-lg">
+                                        <a href="service-single.html">
+                                            Front End Designer
+                                        </a>
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-lg">
+                                        <a href="service-single.html">
+                                            dApps Developer
+                                        </a>
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-lg">
+                                        <a href="service-single.html">
+                                            WEB DEVELOPER
+                                        </a>
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-lg">
+                                        <a href="service-single.html">
+                                            Front End Designer
+                                        </a>
+                                    </h2>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==== / text slider end ==== -->
+
+                        <!-- ==== recent start ==== -->
+                        <section class="pt-120 recent appear-wrapper">
+                            <div class="container">
+                                <div class="row gaper">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="section__content">
+                                            <span class="sub-title text-capitalize">recent completed project</span>
+                                            <h2 class="title-xl title-anim">
+                                                Here are some of the projects I worked on.
+                                            </h2>
+                                            <div class="section__content-cta">
+                                                <div class="section__content-cta">
+                                                    <a href="contact-me.html" class="btn anim-btn btn--secondary">
+                                                        <span class="btn-anim">Hire Me</span>
+                                                        <span class="btn-m">Hire Me</span>
+                                                        <i class="fa-solid fa-circle-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-7">
+                                        <div class="recent__thumb">
+                                            <div class="recent__single appear-down">
+                                                <div class="thumb">
+                                                    <a>
+                                                        <img src="assets/images/Tenup dApp.png" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="title-lg text-capitalize">
+                                                        <a>TenUp dApp</a>
+                                                    </h3>
+                                                    <p class="text-quaternary">
+                                                        TenUp dApp is a decentralized platform designed for the modern user, featuring advanced staking, virtual mining, and Web 3.0 integration. My role involved spearheading the development of the virtual mining components and integrating Web 3.0 technologies to enhance user engagement and security.
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <div class="content-footer">
+                                                    <div class="content-footer__left">
+                                                        <a>dApp Development</a>
+                                                        <a>Web3.0 Implemenation</a>
+                                                    </div>
+                                                    <div class="content-footer__right">
+                                                        <a href="https://dapp.tenup.io/virtual-mining">Visit Website</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recent__single appear-down">
+                                                <div class="thumb">
+                                                    <a>
+                                                        <img src="assets/images/Travelo App.png" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h3 class="title-lg text-capitalize">
+                                                        <a>Travelo</a>
+                                                    </h3>
+                                                    <p class="text-quaternary">
+                                                        Travelo provides a seamless platform for all your travel needs, from booking flights to renting cars and reserving hotels. As the developer of this app, I was responsible for creating the entire application, including a dynamic database, user authentication, and the identity core.
+                                                    </p>
+                                                </div>
+                                                <hr>
+                                                <div class="content-footer">
+                                                    <div class="content-footer__left">
+                                                        <a>Web Application</a>
+                                                        <a>ASP Web App</a>
+                                                    </div>
+                                                    <div class="content-footer__right">
+                                                        <a href="index.html">Visit Website</a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / recent end ==== -->
+                        <!-- ==== expertise start ==== -->
+                        <section class="pt-120  expertise fade-wrapper">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="section__header text-center">
+                                            <span class="sub-title text-capitalize">explore my expertise!</span>
+                                            <h2 class="title-xl fw-5 reveal-title">My Tools</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gaper justify-content-center">
+                                    <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                                        <div class="expertise__single text-center fade-top">
+                                            <div class="thumb">
+                                                <img src="assets/images/expertise/solidity.png" alt="Image">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title-md">Solidity</h4>
+                                                <div class="section__content-cta">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                                        <div class="expertise__single text-center fade-top">
+                                            <div class="thumb">
+                                                <img src="assets/images/expertise/py.png" alt="Image">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title-md">Python</h4>
+                                                <div class="section__content-cta">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                                        <div class="expertise__single text-center fade-top">
+                                            <div class="thumb">
+                                                <img src="assets/images/expertise/charp.png" alt="Image">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title-md">C Family</h4>
+                                                <div class="section__content-cta">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                                        <div class="expertise__single text-center fade-top">
+                                            <div class="thumb">
+                                                <img src="assets/images/expertise/reat.png" alt="Image">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title-md">ReactJS</h4>
+                                                <div class="section__content-cta">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                                        <div class="expertise__single text-center fade-top">
+                                            <div class="thumb">
+                                                <img src="assets/images/expertise/java.png" alt="Image">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title-md">java script</h4>
+                                                <div class="section__content-cta">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
+                                        <div class="expertise__single text-center fade-top">
+                                            <div class="thumb">
+                                                <img src="assets/images/expertise/flu.png" alt="Image">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title-md">Flutter App</h4>
+                                                <div class="section__content-cta">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / expertise end ==== -->
+                        <!-- ==== horizontal text slider start ==== -->
+                        <section class="pt-120 hr-text">
+                            <div class="hr-text-wrapper hr-t-one">
+                                <div class="hr-text-single-wrapper">
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Front End Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">dApp Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Blockchain Development /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">UI Designer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Web Development /</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="hr-text-single-wrapper">
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Front End Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">dApp Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Blockchain Development /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">UI Designer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Web Development /</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-text-wrapper hr-t-two">
+                                <div class="hr-text-single-wrapper">
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Front End Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">dApp Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Blockchain Development /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">UI Designer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Web Development /</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="hr-text-single-wrapper">
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Front End Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">dApp Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Blockchain Development /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">UI Designer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Web Development /</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-text-wrapper hr-t-three">
+                                <div class="hr-text-single-wrapper">
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Front End Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">dApp Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Blockchain Development /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">UI Designer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Web Development /</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="hr-text-single-wrapper">
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Front End Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">dApp Developer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Blockchain Development /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">UI Designer /</a>
+                                        </h2>
+                                    </div>
+                                    <div class="hr-text__single">
+                                        <h2 class="title-xxl">
+                                            <a href="service-single.html">Web Development /</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / horizontal text slider end ==== -->
+                    </main>
+                    <!-- ==== footer start ==== -->
+                    <footer class="pt-120 footer-two">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer-two__inner">
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 col-lg-8 col-xxl-8">
+                                                <div class="section__header text-center">
+                                                    <span class="sub-title">Contact me</span>
+                                                    <h2 class="title-xxl title-anim">
+                                                        I am eager to explore new projects or full-time opportunities that align with my expertise. Please feel free to contact me so we can arrange a meeting to discuss how I can contribute to your team.
+                                                    </h2>                                                    
+                                                    <div class="section__content-cta">
+                                                        <div class="meta">
+                                                            <div class="thumb">
+                                                                <a href="about-me.html">
+                                                                    <img src="assets/images/expertise/pngwing.com (2).png" alt="Image">
+                                                                </a>
+                                                            </div>
+                                                            <h5 class="title-sm">
+                                                                <span>SEND ME</span>
+                                                                <a href="contact-me.html">
+                                                                    <span>A MESSAGE</span>
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright" data-background="assets/images/footer-bg.png">
+                            <div class="container">
+                                <div class="row align-items-center gaper">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="social justify-content-center justify-content-lg-start">
+                                            <a href="https://www.github.com/harrybandukda" target="_blank">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/harrybandukda/" target="_blank">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://www.discordapp.com/users/828427827472629800" target="_blank">
+                                                <i class="fa-brands fa-discord"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-8">
+                                        <div class="footer__copyright-text text-center text-lg-end">
+                                            <p class="text-senary tertiary-text">
+                                                &copy;
+                                                <span id="copyYear"></span>
+                                                Harry Bandukda
+                                                <a href="index.html" class="fw-6"></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- ==== / footer end ==== -->
+                </div>
+            </div>
+        </div>
+        <!-- ==== / page wrapper end ==== -->
+        <!-- ==== scroll to top start ==== -->
+        <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+            <span></span>
+            <svg
+                class="progress-circle svg-content"
+                width="100%"
+                height="100%"
+                viewBox="-1 -1 102 102"
+            >
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </button>
+        <!-- ==== / scroll to top end ==== -->
+        <!-- ==== js dependencies ==== -->
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <!-- bootstrap five js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- nice select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- odometer js -->
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- scroll smoother js -->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!-- splittext js -->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!-- scrollto js -->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!-- scrolltrigger js -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!-- gsap js -->
+        <script src="assets/js/gsap.min.js"></script>
+        <!-- chroma js -->
+        <script src="assets/js/chroma.min.js"></script>
+        <!-- viewport js -->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!-- typed js -->
+        <script src="assets/js/typed.umd.js"></script>
+        <!-- ==== / js dependencies end ==== -->
+        <!-- main js -->
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
