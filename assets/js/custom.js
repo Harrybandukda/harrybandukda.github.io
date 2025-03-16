@@ -434,6 +434,22 @@
       });
     });
 
+    $("#downloadCoverLetter").on("click", function () {
+      var pdfURL = "assets/pdf/Cover-letter-final.pdf";
+
+      var downloadLink = document.createElement("a");
+      downloadLink.href = pdfURL;
+      downloadLink.download = "my-cv.pdf";
+
+      document.body.appendChild(downloadLink);
+
+      downloadLink.click();
+
+      $(downloadLink).on("click", function () {
+        $(this).remove();
+      });
+    });
+
     /**
      * ======================================
      * 14. animated split btn
