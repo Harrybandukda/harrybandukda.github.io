@@ -1,0 +1,25 @@
+/* Make all cards the same size */
+.awards__slider-single {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bn-about-thumb {
+  height: 380px; /* Set fixed height matching Flavourly card */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bn-about-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes images maintain aspect ratio while filling container */
+}
+
+.bn-about__content {
+  height: 220px; /* Set fixed height for content area */
+  display: flex;
+  flex-direction: column;
+}
