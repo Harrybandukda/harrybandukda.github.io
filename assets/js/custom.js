@@ -621,9 +621,9 @@
     if ($("#textTyped").length) {
       new Typed("#textTyped", {
         strings: [
-          "Blockchain Developer",
-          "Front End Designer",
-          "Ethereum Developer",
+          "Frontend Developer",
+          "Full Stack Engineer",
+          "UI/UX Enthusiast",
         ],
         typeSpeed: 50,
         startDelay: 50,
