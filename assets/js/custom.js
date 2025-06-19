@@ -883,6 +883,7 @@
         dots: true,
         appendDots: $(".awards-dots"),
         centerMode: false,
+        initialSlide: 3,
         responsive: [
           {
             breakpoint: 992,
