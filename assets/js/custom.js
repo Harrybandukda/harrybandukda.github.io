@@ -419,7 +419,7 @@
      * ======================================
      */
     $("#downloadCv").on("click", function () {
-      var pdfURL = "assets/pdf/resume-final.pdf";
+      var pdfURL = "assets/pdf/harrybandukda-resume.pdf";
 
       var downloadLink = document.createElement("a");
       downloadLink.href = pdfURL;
@@ -435,7 +435,7 @@
     });
 
     $("#downloadCoverLetter").on("click", function () {
-      var pdfURL = "assets/pdf/Cover-letter-final.pdf";
+      var pdfURL = "assets/pdf/harrybandukda-coverletter.pdf";
 
       var downloadLink = document.createElement("a");
       downloadLink.href = pdfURL;
