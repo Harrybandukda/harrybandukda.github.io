@@ -13,7 +13,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="border-t border-border py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="border-t py-12 px-4 sm:px-6 lg:px-8" style={{ borderColor: 'rgba(0, 217, 255, 0.1)' }}>
       <div className="max-w-7xl mx-auto">
         {/* Footer Content */}
         <motion.div
@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold gradient-text mb-2">HB</h3>
-            <p className="text-text-secondary">
+            <p className="text-gray-400">
               Full Stack Developer & Blockchain Engineer
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {['Home', 'About', 'Projects', 'Contact'].map((link) => (
                 <li key={link}>
-                  <a href={`#${link.toLowerCase()}`} className="text-text-secondary hover:text-primary transition-colors">
+                  <a href={`#${link.toLowerCase()}`} className="text-gray-400 hover:text-cyan-400 transition-colors">
                     {link}
                   </a>
                 </li>
@@ -57,10 +57,11 @@ export default function Footer() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 glass rounded-lg border border-border hover:border-primary hover:text-primary transition-all"
+                    className="p-2 glass rounded-lg transition-all hover:scale-110"
+                    style={{ borderColor: 'rgba(0, 217, 255, 0.2)' }}
                     aria-label={link.name}
                   >
-                    <Icon size={20} />
+                    <Icon size={20} style={{ color: '#00d9ff' }} />
                   </a>
                 )
               })}
@@ -69,20 +70,20 @@ export default function Footer() {
         </motion.div>
 
         {/* Divider */}
-        <div className="border-t border-border mb-8"></div>
+        <div className="border-t mb-8" style={{ borderColor: 'rgba(0, 217, 255, 0.1)' }}></div>
 
         {/* Bottom */}
         <motion.div
-          className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left text-text-muted text-sm"
+          className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left text-gray-500 text-sm"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
           <p className="flex items-center justify-center sm:justify-start gap-1 mb-4 sm:mb-0">
-            Made with <Heart size={16} className="text-accent" /> by Harry Bandukda © {currentYear}
+            Made with <Heart size={16} style={{ color: '#ff006e' }} /> by Harry Bandukda © {currentYear}
           </p>
-          <p className="text-text-muted">
+          <p className="text-gray-500">
             Designed & developed with React, Next.js & Tailwind CSS
           </p>
         </motion.div>

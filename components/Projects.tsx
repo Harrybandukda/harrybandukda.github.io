@@ -77,7 +77,7 @@ export default function Projects() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             A selection of my recent work showcasing my skills and experience
           </p>
         </motion.div>
@@ -95,77 +95,62 @@ export default function Projects() {
               key={project.id}
               variants={itemVariants}
               whileHover={{ y: -5 }}
-              className="group glass rounded-xl overflow-hidden border border-border hover:border-primary transition-all duration-300"
+              className="group glass rounded-xl overflow-hidden transition-all duration-300"
+              style={{ borderColor: 'rgba(0, 217, 255, 0.2)' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.5)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.2)'
+              }}
             >
               {/* Image Container */}
-              <div className="relative h-48 sm:h-64 overflow-hidden bg-surface">
+              <div className="relative h-48 overflow-hidden bg-gray-900">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                <p className="text-text-secondary text-sm mb-4 line-clamp-3">{project.description}</p>
+                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-gray-400 text-sm mb-4">{project.description}</p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 text-xs font-medium bg-primary bg-opacity-10 text-primary rounded-full border border-primary border-opacity-30"
-                    >
+                    <span key={index} className="text-xs px-2 py-1 rounded" style={{ backgroundColor: 'rgba(0, 217, 255, 0.1)', color: '#00d9ff' }}>
                       {tag}
                     </span>
                   ))}
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4">
+                <div className="flex gap-3">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-primary text-background rounded-lg font-semibold hover:bg-accent transition-all"
+                    className="inline-flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors"
                   >
-                    <Github size={18} /> Code
+                    <Github size={16} /> Code
                   </a>
                   <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-background transition-all"
+                    className="inline-flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors"
                   >
-                    <ExternalLink size={18} /> Live
+                    <ExternalLink size={16} /> Live
                   </a>
                 </div>
               </div>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* View More Button */}
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <a
-            href="https://github.com/harrybandukda"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-background transition-all"
-          >
-            View All Projects <ExternalLink size={20} />
-          </a>
         </motion.div>
       </div>
     </section>

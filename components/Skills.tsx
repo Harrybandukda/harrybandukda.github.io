@@ -55,7 +55,7 @@ export default function Skills() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Skills & <span className="gradient-text">Expertise</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Technologies and tools I&apos;ve mastered throughout my career
           </p>
         </motion.div>
@@ -73,14 +73,21 @@ export default function Skills() {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -5 }}
-              className="glass rounded-xl p-6 border border-border hover:border-primary transition-all"
+              className="glass rounded-xl p-6 transition-all"
+              style={{ borderColor: 'rgba(0, 217, 255, 0.2)' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.5)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.2)'
+              }}
             >
-              <h3 className="text-xl font-bold text-primary mb-4">{category.category}</h3>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#00d9ff' }}>{category.category}</h3>
               <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="flex items-center">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                    <span className="text-text-secondary">{skill}</span>
+                    <span className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: '#00d9ff' }}></span>
+                    <span className="text-gray-400">{skill}</span>
                   </div>
                 ))}
               </div>
@@ -90,7 +97,8 @@ export default function Skills() {
 
         {/* Featured Technologies */}
         <motion.div
-          className="mt-16 glass rounded-xl p-8 border border-border"
+          className="mt-16 glass rounded-xl p-8"
+          style={{ borderColor: 'rgba(0, 217, 255, 0.2)' }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -101,7 +109,18 @@ export default function Skills() {
             {['AI/ML', 'Web3', 'Quantum Computing', 'Cloud Architecture', 'DevOps', 'Performance Optimization'].map((tech, index) => (
               <span
                 key={index}
-                className="px-4 py-2 bg-primary bg-opacity-10 border border-primary rounded-full text-primary text-sm font-medium hover:bg-opacity-20 transition-all"
+                className="px-4 py-2 rounded-full text-sm font-medium transition-all"
+                style={{ 
+                  backgroundColor: 'rgba(0, 217, 255, 0.1)',
+                  borderColor: '#00d9ff',
+                  color: '#00d9ff'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(0, 217, 255, 0.2)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(0, 217, 255, 0.1)'
+                }}
               >
                 {tech}
               </span>

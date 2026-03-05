@@ -73,7 +73,7 @@ export default function Experience() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Professional <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             My journey in software development and tech industry
           </p>
         </motion.div>
@@ -90,27 +90,34 @@ export default function Experience() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="glass rounded-xl p-8 border border-border hover:border-primary transition-all group"
+              className="glass rounded-xl p-8 transition-all group"
+              style={{ borderColor: 'rgba(0, 217, 255, 0.2)' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.5)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.2)'
+              }}
             >
               {/* Header */}
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>
-                  <p className="text-primary font-semibold mb-1">{exp.company}</p>
-                  <p className="text-text-muted text-sm">{exp.period}</p>
+                  <p style={{ color: '#00d9ff' }} className="font-semibold mb-1">{exp.company}</p>
+                  <p className="text-gray-500 text-sm">{exp.period}</p>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="text-text-secondary mb-6 leading-relaxed">{exp.description}</p>
+              <p className="text-gray-400 mb-6 leading-relaxed">{exp.description}</p>
 
               {/* Achievements */}
               <div className="space-y-3">
-                <p className="font-semibold text-sm text-primary mb-3">Key Achievements:</p>
+                <p className="font-semibold text-sm" style={{ color: '#00d9ff' }}>Key Achievements:</p>
                 {exp.achievements.map((achievement, achIndex) => (
                   <div key={achIndex} className="flex items-start gap-3">
-                    <CheckCircle size={20} className="text-primary mt-1 flex-shrink-0" />
-                    <span className="text-text-secondary">{achievement}</span>
+                    <CheckCircle size={20} style={{ color: '#00d9ff' }} className="mt-1 flex-shrink-0" />
+                    <span className="text-gray-400">{achievement}</span>
                   </div>
                 ))}
               </div>
@@ -120,7 +127,8 @@ export default function Experience() {
 
         {/* Education Section */}
         <motion.div
-          className="mt-16 glass rounded-xl p-8 border border-border"
+          className="mt-16 glass rounded-xl p-8"
+          style={{ borderColor: 'rgba(0, 217, 255, 0.2)' }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -130,14 +138,14 @@ export default function Experience() {
           <div className="space-y-4">
             <div>
               <p className="text-lg font-bold">Bachelor of Science in Computer Science</p>
-              <p className="text-primary">University of Toronto</p>
-              <p className="text-text-muted text-sm">Graduated 2019</p>
+              <p style={{ color: '#00d9ff' }}>University of Toronto</p>
+              <p className="text-gray-500 text-sm">Graduated 2019</p>
             </div>
-            <hr className="border-border" />
+            <hr style={{ borderColor: 'rgba(0, 217, 255, 0.1)' }} />
             <div>
               <p className="text-lg font-bold">Advanced Web Development Bootcamp</p>
-              <p className="text-primary">Codepath</p>
-              <p className="text-text-muted text-sm">2019</p>
+              <p style={{ color: '#00d9ff' }}>Codepath</p>
+              <p className="text-gray-500 text-sm">2019</p>
             </div>
           </div>
         </motion.div>

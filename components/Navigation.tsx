@@ -17,7 +17,7 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b" style={{ borderColor: 'rgba(0, 217, 255, 0.1)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -31,7 +31,7 @@ export default function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-text-secondary hover:text-primary transition-colors text-sm font-medium"
+                className="text-gray-400 hover:text-cyan-400 transition-colors text-sm font-medium"
               >
                 {item.label}
               </a>
@@ -41,7 +41,8 @@ export default function Navigation() {
           {/* CTA Button */}
           <a
             href="#contact"
-            className="hidden md:inline-block px-6 py-2 bg-primary text-background rounded-lg font-semibold hover:bg-accent hover:text-white transition-all"
+            style={{ backgroundColor: '#00d9ff' }}
+            className="hidden md:inline-block px-6 py-2 text-black rounded-lg font-semibold hover:opacity-90 transition-all"
           >
             Get in Touch
           </a>
@@ -49,7 +50,8 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-primary"
+            style={{ color: '#00d9ff' }}
+            className="md:hidden p-2"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -58,14 +60,14 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-border">
+          <div className="md:hidden pb-4 border-t" style={{ borderColor: 'rgba(0, 217, 255, 0.1)' }}>
             <div className="space-y-2">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-2 text-text-secondary hover:text-primary rounded-lg hover:bg-surface transition-all"
+                  className="block px-4 py-2 text-gray-400 hover:text-cyan-400 rounded-lg transition-all"
                 >
                   {item.label}
                 </a>
@@ -73,7 +75,8 @@ export default function Navigation() {
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-2 bg-primary text-background rounded-lg font-semibold hover:bg-accent text-center"
+                style={{ backgroundColor: '#00d9ff' }}
+                className="block px-4 py-2 text-black rounded-lg font-semibold hover:opacity-90 text-center transition-all"
               >
                 Get in Touch
               </a>

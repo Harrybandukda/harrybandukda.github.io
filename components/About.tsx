@@ -19,38 +19,39 @@ export default function About() {
               About <span className="gradient-text">Me</span>
             </h2>
             
-            <p className="text-text-secondary text-lg leading-relaxed mb-6">
+            <p className="text-gray-400 text-lg leading-relaxed mb-6">
               I&apos;m a passionate full-stack developer and blockchain engineer based in Toronto, Canada. With a strong foundation in Computer Science and hands-on experience in building scalable web applications, I love turning complex problems into simple, elegant solutions.
             </p>
 
-            <p className="text-text-secondary text-lg leading-relaxed mb-6">
+            <p className="text-gray-400 text-lg leading-relaxed mb-6">
               My journey into tech started with curiosity about how websites work. Over the years, I&apos;ve developed expertise in modern frontend frameworks like React and Next.js, backend systems with Node.js and Python, and cutting-edge blockchain technologies.
             </p>
 
-            <p className="text-text-secondary text-lg leading-relaxed mb-8">
+            <p className="text-gray-400 text-lg leading-relaxed mb-8">
               When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying ahead of industry trends.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mb-8">
               <div>
-                <p className="text-3xl font-bold text-primary">50+</p>
-                <p className="text-text-secondary text-sm">Projects Completed</p>
+                <p className="text-3xl font-bold" style={{ color: '#00d9ff' }}>50+</p>
+                <p className="text-gray-400 text-sm">Projects Completed</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">5+</p>
-                <p className="text-text-secondary text-sm">Years Experience</p>
+                <p className="text-3xl font-bold" style={{ color: '#00d9ff' }}>5+</p>
+                <p className="text-gray-400 text-sm">Years Experience</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">100%</p>
-                <p className="text-text-secondary text-sm">Client Satisfaction</p>
+                <p className="text-3xl font-bold" style={{ color: '#00d9ff' }}>100%</p>
+                <p className="text-gray-400 text-sm">Client Satisfaction</p>
               </div>
             </div>
 
             {/* CTA */}
             <a
               href="#contact"
-              className="inline-flex px-8 py-4 bg-primary text-background rounded-lg font-semibold hover:bg-accent transition-all"
+              style={{ backgroundColor: '#00d9ff' }}
+              className="inline-flex px-8 py-4 text-black rounded-lg font-semibold hover:opacity-90 transition-all"
             >
               Start a Project
             </a>
@@ -64,7 +65,7 @@ export default function About() {
             viewport={{ once: true }}
             className="relative h-96 lg:h-full min-h-96"
           >
-            <div className="glass rounded-xl overflow-hidden border border-primary border-opacity-30 h-full relative">
+            <div className="glass rounded-xl overflow-hidden h-full relative" style={{ borderColor: 'rgba(0, 217, 255, 0.3)' }}>
               <Image
                 src="/assets/images/IMG_1627.jpg"
                 alt="Harry Bandukda"

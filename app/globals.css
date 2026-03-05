@@ -1,8 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+}
+
+@theme {
+  --color-dark-bg: #0a0e27;
+  --color-dark-bg-secondary: #1a1f3a;
+  --color-dark-bg-tertiary: #0f1328;
+  --color-cyan: #00d9ff;
+  --color-cyan-dark: #00b8cc;
+  --color-magenta: #ff006e;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0aec0;
+  --color-text-tertiary: #718096;
+  --color-accent-blue: #3b82f6;
+  --color-accent-purple: #8b5cf6;
+  --color-accent-green: #10b981;
+}
 
 * {
   margin: 0;
@@ -11,9 +32,6 @@
 }
 
 :root {
-  --font-inter: 'Inter', sans-serif;
-  --font-jetbrains-mono: 'JetBrains Mono', monospace;
-  
   color-scheme: dark;
 }
 
@@ -24,7 +42,6 @@ html {
 body {
   background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
   color: #ffffff;
-  font-family: var(--font-inter);
   overflow-x: hidden;
 }
 
